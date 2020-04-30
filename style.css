@@ -1,0 +1,22 @@
+body{
+    background-color: #e8faff;
+}
+.desktop-nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.header{
+    height: 100vh;
+}
+.buy{
+    height: 100vh;
+}
+.narrow-section{
+    min-height: 126px;
+    background-color: rgba(214, 237, 249, 0.74);
+}
+.mission{
+    min-height: 560px;
+}
+.usage{}
