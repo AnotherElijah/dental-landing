@@ -6,92 +6,96 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="hamburger-menu.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800;900&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/0fcd680d7a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
 
-<header>
-    <nav role="navigation" class="d-md-none">
+<header class="bg-white">
+    <nav role="navigation" class="mobile-nav shadow-sm">
         <div id="menuToggle">
             <input type="checkbox"/>
-
-            <ul id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu" class="bg-white shadow-sm">
                 <a href="#">
-                    <li>Store</li>
+                    <li class="text-center">Store</li>
                 </a>
                 <a href="#">
-                    <li>Contact</li>
+                    <li class="text-center">Contact</li>
                 </a>
                 <a href="#">
-                    <li>Help</li>
+                    <li class="text-center">Help</li>
                 </a>
                 <a href="#">
-                    <li>Review</li>
+                    <li class="text-center">Review</li>
                 </a>
                 <a href="" target="_blank">
-                    <li>Contact us</li>
+                    <li class="text-center">Contact us</li>
                 </a>
                 <a href="" target="_blank">
-                    <li>Sign in</li>
+                    <li class="text-center">Sign in</li>
                 </a>
             </ul>
         </div>
-        <h2 class="logo-1">BRUSHER</h2>
-
+        <h2 class="logo-1 text-danger p-3 w-25 logo-mobile">BRUSHER</h2>
     </nav>
-    <nav class="desktop-nav navbar-expand-lg d-md-flex d-sm-none d-none navbar-light p-0">
-        <nav class="col-1 navbar navbar-expand-lg navbar-light">
+
+    <nav class="desktop-nav navbar-expand-lg d-md-flex d-sm-none d-none navbar-light p-0 text-center">
+        <nav class="col-1 navbar navbar-expand-lg navbar-light ml-3">
             <a class="navbar-brand" href="#">Store</a>
-        </nav>
-        <nav class="col-1 navbar navbar-expand-lg navbar-light">
+
             <a class="navbar-brand" href="#">Contact</a>
         </nav>
-        <h2 class="logo-2 col-2 offset-3">BRUSHER</h2>
-        <nav class="col-1 offset-1 navbar navbar-expand-lg navbar-light">
+        <h2 class="logo-2 col-2 offset-4 text-danger p-3 mb-0">BRUSHER</h2>
+        <nav class="col-1 offset-2 navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">Help</a>
-        </nav>
-        <nav class="col-1 navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">Review</a>
         </nav>
         <nav class="col-1 navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">Contact us</a>
-        </nav>
-        <nav class="col-1 navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Sign in</a>
+            <a class="navbar-brand btn text-danger">
+                Sign in
+            </a>
         </nav>
     </nav>
 </header>
 <main>
-    <section class="m-0 p-2 m-sm-5 bg-light title-block">
+    <section class="m-0 pl-2 pr-2 pb-1 pt-1 m-sm-5 bg-light title-block">
         <div class="d-flex flex-row header align-items-center justify-content-between w-100 p-5 m-0">
-            <div class="pl-5 ml-5">
-                <h1>Simple. Accessible. <br> Enjoyable.</h1>
-                <p>Everything you need to support healthy oral care habits for life.</p>
-                <button class="btn rounded-pill btn-outline-primary w-25 text-uppercase text-white bg-primary">store
+            <div class="pl-5 ml-5 title-block-txt-wrapper">
+                <h1 class="text-white">Simple. Accessible. <br> Enjoyable.</h1>
+                <p class="text-white">Everything you need to support healthy oral care habits for life.</p>
+                <button class="btn rounded-pill btn-outline-primary text-white bg-primary pt-3 pb-3 pl-5 pr-5">Store
                 </button>
             </div>
         </div>
     </section>
     <section class="narrow-section p-2 m-0 row align-content-center">
         <div class="row w-100 m-0 text-center">
-            <a class="pt-2 pb-2 col-12 col-md-4">Original new solutions <i class="fas fa-glasses d-block"></i></a>
+            <a class="pt-2 pb-2 col-12 col-md-4">Original new solutions <i
+                    class="fas fa-glasses d-block text-danger pt-2"></i></a>
             <a class="pt-2 pb-2 col-12 col-md-4">Best electric brush in ReviewFinder
                 <span class="d-block">
-                    <i class="fas fa-star text-secondary text-danger"></i>
-                    <i class="fas fa-star text-secondary text-danger"></i>
-                    <i class="fas fa-star text-secondary text-danger"></i>
-                    <i class="fas fa-star text-secondary text-danger"></i>
-                    <i class="fas fa-star text-secondary text-danger"></i>
+                    <i aria-hidden="true" class="fas fa-star text-secondary text-danger pt-2"></i>
+                    <i aria-hidden="true" class="fas fa-star text-secondary text-danger pt-2"></i>
+                    <i aria-hidden="true" class="fas fa-star text-secondary text-danger pt-2"></i>
+                    <i aria-hidden="true" class="fas fa-star text-secondary text-danger pt-2"></i>
+                    <i aria-hidden="true" class="fas fa-star text-secondary text-danger pt-2"></i>
                 </span>
             </a>
-            <a class="pt-2 pb-2 col-12 col-md-4">Top 3 in StoreTop<i class="fas fa-trophy d-block"></i></a>
+            <a class="pt-2 pb-2 col-12 col-md-4">Top 3 in StoreTop<i aria-hidden="true"
+                                                                     class="fas fa-trophy d-block text-danger pt-2"></i></a>
         </div>
     </section>
     <div class="mission p-5 d-none d-md-flex flex-column align-items-center justify-content-center commercial">
-        <h2 class="text-center">Commercial offers</h2>
+        <h2 class="text-center pt-3 pb-5">Commercial offers</h2>
         <div class="row m-0">
             <div class="col-4">
                 <a>Original new solutions</a>
@@ -112,198 +116,250 @@
                     repellendus temporibus! Facilis, iusto.</p>
             </div>
         </div>
-        <a href="#contact-form">Get your offer</a>
+        <a class="btn rounded-pill btn-outline-primary text-white bg-primary pt-2 pb-2 pl-3 pr-3" href="#contact-form">Get
+            your offer</a>
     </div>
-    <div class="usage p-2 m-5 justify-content-between text-center">
-        <h2 class="col-12">Examples of usage</h2>
+    <div class="usage p-5 justify-content-between text-center">
         <div>
-            <div class="row">
-                <p class="offset-lg-2 offset-md-0 col-lg-4 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Alias aperiam asperiores
-                    dolor eligendi, et excepturi incidunt laboriosam nemo perferendis quas quasi quibusdam sequi
-                    unde, veritatis voluptatem! Ducimus incidunt magnam quaerat.</p>
-                <img class="w-100 offset-lg-0 offset-md-0 col-lg-4 col-md-6" src="brush1.webp" alt="">
-            </div>
-            <div class="row">
-                <img class="w-100 d-none d-md-block d-sm-none offset-lg-2 col-md-4"
-                     src="encompass-j-shaped-toothbrush-cleans-teeth-in-20-seconds-designboom-600.jpg" alt="">
-                <p class="offset-lg-0 offset-md-0 col-lg-4 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Alias aperiam asperiores
-                    dolor eligendi, et excepturi incidunt laboriosam nemo perferendis quas quasi quibusdam sequi
-                    unde, veritatis voluptatem! Ducimus incidunt magnam quaerat.</p>
-                <img class="w-100 offset-md-0 col-lg-4 col-md-6 d-md-none"
-                     src="encompass-j-shaped-toothbrush-cleans-teeth-in-20-seconds-designboom-600.jpg" alt="">
+            <div class="usage-item-wrapper pb-5 d-flex flex-row justify-content-center">
+                <div class="text-left w-25 pr-4">
+                    <h2 class="col-12 pt-3 pb-3 pl-0">Examples of usage</h2>
 
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing
+                        elit. Alias aperiam asperiores
+                        dolor eligendi, et excepturi incidunt laboriosam nemo perferendis quas quasi quibusdam sequi
+                        unde</p>
+                    <p><i aria-hidden="true" class="mr-2 fas fa-leaf"></i>Veritatis voluptatem</p>
+                    <p><i aria-hidden="true" class="mr-2 fas fa-quote-left"></i>Ducimus incidunt</p>
+                    <p><i aria-hidden="true" class="mr-2 far fa-clock"></i>Magnam quaerat</p>
+                </div>
+                <div class="usage-item-img-1 w-25 pl-4">
+                    <div class="usage-img usage-img-1"></div>
+                </div>
             </div>
-            <div class="row">
-                <p class="offset-lg-2 offset-md-0 col-lg-4 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Alias aperiam asperiores
-                    dolor eligendi, et excepturi incidunt laboriosam nemo perferendis quas quasi quibusdam sequi
-                    unde, veritatis voluptatem! Ducimus incidunt magnam quaerat.</p>
-                <img class="w-100 offset-lg-0 offset-md-0 col-lg-4 col-md-6" src="brushing-teeth.jpg" alt="">
+
+            <div class="usage-item-wrapper usage-item-wrapper-2 pb-5 d-flex flex-row justify-content-center">
+                <div class="pr-4">
+                    <div class="usage-img usage-img-2"
+                    ></div>
+                </div>
+                <div class="text-left w-25 pl-4">
+                    <h2 class="col-12 pt-3 pb-3 pl-0">Examples of usage</h2>
+
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing
+                        elit. Alias aperiam asperiores
+                        dolor eligendi, et excepturi incidunt laboriosam nemo perferendis quas quasi quibusdam sequi
+                        unde</p>
+                    <p><i aria-hidden="true" class="mr-2 fas fa-tint"></i>Veritatis voluptatem</p>
+                    <p><i aria-hidden="true" class="mr-2 fas fa-briefcase"></i>Ducimus incidunt</p>
+                    <p><i aria-hidden="true" class="mr-2 fas fa-tooth"></i>Magnam quaerat</p>
+                </div>
+                <div class="w-100 offset-md-0 col-lg-4 col-md-6 d-md-none"></div>
             </div>
+
+            <div class="usage-item-wrapper pb-5 d-flex flex-row justify-content-center">
+                <div class="text-left w-25 pr-4">
+                    <h2 class="col-12 pt-3 pb-3 pl-0">Examples of usage</h2>
+
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing
+                        elit. Alias aperiam asperiores
+                        dolor eligendi, et excepturi incidunt laboriosam nemo perferendis quas quasi quibusdam sequi
+                        unde</p>
+                    <p><i aria-hidden="true" class="mr-2 far fa-heart"></i>Veritatis voluptatem</p>
+                    <p><i aria-hidden="true" class="mr-2 fas fa-quote-left"></i>Ducimus incidunt</p>
+                    <p><i aria-hidden="true" class="mr-2 far fa-clock"></i>Magnam quaerat</p>
+                </div>
+                <div class="w-25 pr-4">
+                    <div class="usage-img usage-img-3"></div>
+                </div>
+            </div>
+
         </div>
     </div>
     <section
-            class="narrow-section pt-4 pb-5 pl-0 pr-0 m-0 bg-white overflow-scroll d-flex flex-column align-items-center reviews">
-        <h2 class="p-5 pb-2">Over 4 million mouths and counting</h2>
-        <div class="d-flex flex-row reviews-inner">
-            <div class="rounded-10 review-img ml-3 bg-dark">
+            class="narrow-section pt-5 pb-5 pl-0 pr-0 m-0 d-flex flex-column align-items-center reviews bg-white">
+        <div class="d-flex flex-row align-items-start reviews-inner">
+            <div class="rounded-10 review-img review-img-1 ml-3 bg-dark">
             </div>
             <div class="rounded-10 review-wrapper ml-3 border border-gray d-flex flex-column justify-content-between">
                 <div class="top-wrapper">
                     <p class="rate d-flex flex-row justify-content-center mt-2 mb-0 pt-4 pb-0">
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
 
                     </p>
-                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit</p>
                 </div>
                 <p class="name border-top d-flex flex-row justify-content-start align-items-center mb-0"><span
                         class="mr-3 ml-3 p-0 bg-info rounded-circle"></span>John Snow</p>
             </div>
-            <div class="rounded-10 review-img ml-3 bg-dark">
+            <div class="rounded-10 review-img review-img-2 ml-3 bg-dark">
             </div>
             <div class="rounded-10 review-wrapper ml-3 border border-gray d-flex flex-column justify-content-between">
                 <div class="top-wrapper">
                     <p class="rate d-flex flex-row justify-content-center mt-2 mb-0 pt-4 pb-0">
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
 
                     </p>
-                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor sit amet, consectetur</p>
+                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor
+                        sit amet, consectetur</p>
                 </div>
                 <p class="name border-top d-flex flex-row justify-content-start align-items-center mb-0"><span
                         class="mr-3 ml-3 p-0 bg-info rounded-circle"></span>John Snow</p>
             </div>
-            <div class="rounded-10 review-img ml-3 bg-dark">
+            <div class="rounded-10 review-img review-img-3 ml-3 bg-dark">
             </div>
             <div class="rounded-10 d-none d-md-flex review-wrapper ml-3 border border-gray d-flex flex-column justify-content-between">
                 <div class="top-wrapper">
                     <p class="rate d-flex flex-row justify-content-center mt-2 mb-0 pt-4 pb-0">
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
 
                     </p>
-                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit</p>
                 </div>
                 <p class="name border-top d-flex flex-row justify-content-start align-items-center mb-0"><span
                         class="mr-3 ml-3 p-0 bg-info rounded-circle"></span>John Snow</p>
             </div>
-            <div class="rounded-10 review-img ml-3 bg-dark">
+            <div class="rounded-10 review-img review-img-4 ml-3 bg-dark">
             </div>
             <div class="rounded-10 d-none d-md-flex review-wrapper ml-3 border border-gray d-flex flex-column justify-content-between">
                 <div class="top-wrapper">
                     <p class="rate d-flex flex-row justify-content-center mt-2 mb-0 pt-4 pb-0">
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
 
                     </p>
-                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor sit amet</p>
+                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor
+                        sit amet</p>
                 </div>
                 <p class="name border-top d-flex flex-row justify-content-start align-items-center mb-0"><span
                         class="mr-3 ml-3 p-0 bg-info rounded-circle"></span>John Snow</p>
             </div>
-            <div class="rounded-10 review-img ml-3 bg-dark">
+            <div class="rounded-10 review-img review-img-5 ml-3 bg-dark">
             </div>
             <div class="rounded-10 d-none d-md-flex review-wrapper ml-3 border border-gray d-flex flex-column justify-content-between">
                 <div class="top-wrapper">
                     <p class="rate d-flex flex-row justify-content-center mt-2 mb-0 pt-4 pb-0">
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
-                        <i class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
+                        <i aria-hidden="true" class="fas fa-star text-secondary text-danger m-1"></i>
 
                     </p>
-                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur hic nam quia</p>
+                    <p class="txt text-center pl-5 pr-5 d-flex flex-column justify-content-center">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Consequuntur hic nam quia</p>
                 </div>
                 <p class="name border-top d-flex flex-row justify-content-start align-items-center mb-0"><span
                         class="mr-3 ml-3 p-0 bg-info rounded-circle"></span>John Snow</p>
             </div>
         </div>
     </section>
-    <section class="buy m-0 p-2 m-sm-5 rounded bg-light">
-        <div class="container d-flex flex-column header align-content-center justify-content-center">
-            <h1>BUY NOW</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum, distinctio ducimus ea
-                exercitationem iure iusto minima nesciunt nostrum officiis perferendis quis, repudiandae sequi vel
-                voluptas. At cupiditate distinctio nisi.</p>
-            <button class="btn btn-outline-primary w-25">Buy Now</button>
-            <div class="row text-center">
-                <div class="col ">Bonus</div>
-                <div class="col ">Garanty</div>
-                <div class="col ">Free shipping</div>
+    <div class="bonuses p-5 d-lg-none d-md-flex flex-column align-items-center justify-content-center commercial bg-danger">
+        <h2 class="text-center pt-3 pb-5 text-white">Commercial offers</h2>
+        <div class="row m-0">
+            <div class="col-4">
+                <h5 class="text-white text-center">Free shipping</h5>
+                <p class="text-white text-center">Lorem ipsum dolor</p>
+            </div>
+            <div class="col-4">
+                <h5 class="text-white text-center">100 refund</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-4">
+                <h5 class="text-white text-center">Discounts</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
+    </div>
+
+    <section class="buy-wrapper pt-2 pb-2">
+        <section class="buy m-0 p-2 m-sm-5 bg-light d-flex flex-column align-items-start justify-content-center">
+            <div class="w-50 pl-5 ml-5">
+                <h2 class="text-white text-left pl-5">Order now.<br>Get in 2 days!</h2>
+                <p class="text-white text-left w-75 pl-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Assumenda cum,
+                    distinctio ducimus ea.</p>
+                <button class="btn rounded-pill btn-outline-primary text-white bg-primary ml-5 pt-3 pb-3 pl-5 pr-5">Buy
+                    Now
+                </button>
+            </div>
+        </section>
     </section>
-    <section id="contact-form" class="contact-form row justify-content-center m-0 bg-secondary">
-        <form class="col-4">
+
+    <section id="contact-form" class="contact-form row justify-content-center p-5 m-0">
+        <h2 class="col-12 text-center pt-3 pb-5">Contact us now!</h2>
+        <form class="col-md-4 col-sm-12">
+            <div class="form-group">
+                <label for="examplename">Your name</label>
+                <input type="email" class="form-control" id="examplename" placeholder="Johnny">
+            </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
+                <label for="exampleFormControlSelect1">Your region</label>
                 <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                    <option>Europe</option>
+                    <option>USA</option>
+                    <option>Asia</option>
+                    <option>Africa</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                          placeholder="Dear BRUSHER..."></textarea>
             </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+            <button class="btn rounded-pill btn-outline-primary text-white bg-primary pt-2 pb-2 pl-3 pr-3">
+                Send
+            </button>
         </form>
     </section>
 </main>
-<footer>
-    <nav class="row navbar navbar-expand-lg navbar-light bg-light p-0 m-0">
-        <nav class="col-12 col-md-1 navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Store</a>
+<footer class="bg-primary">
+    <nav class="p-3 m-0">
+        <nav class="d-inline navbar navbar-expand-lg p-0 text-center">
+            <a class="navbar-brand text-white" href="#">Store</a>
         </nav>
-        <nav class="col-12 col-md-1 navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Contact</a>
+        <nav class="d-inline navbar navbar-expand-lg p-0 text-center">
+            <a class="navbar-brand text-white" href="#">Contact</a>
         </nav>
-        <nav class="col-12 col-md-1 navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Help</a>
+        <nav class="d-inline navbar navbar-expand-lg p-0 text-center">
+            <a class="navbar-brand text-white" href="#">Help</a>
         </nav>
-        <nav class="col-12 col-md-1 navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Review</a>
+        <nav class="d-inline navbar navbar-expand-lg p-0 text-center">
+            <a class="navbar-brand text-white" href="#">Review</a>
         </nav>
-        <nav class="col-12 col-md-1 navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Contact us</a>
+        <nav class="d-inline navbar navbar-expand-lg p-0 text-center">
+            <a class="navbar-brand text-white" href="#">Contact us</a>
         </nav>
-        <nav class="col-12 col-md-1 navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Sign in</a>
+        <nav class="d-inline navbar navbar-expand-lg p-0 text-center">
+            <a class="navbar-brand text-white" href="#">Sign in</a>
         </nav>
+        <h2 class="logo-1 text-white p-3 mb-0 d-flex flex-row justify-content-center">BRUSHER</h2>
+        <p class="rights text-white p-3 mb-0 d-flex flex-row justify-content-center">All rights reserved</p>
     </nav>
-    <img src="logo.png" alt="" class="col-2">
 </footer>
 
 </body>
