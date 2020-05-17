@@ -92,15 +92,15 @@ header a {
 }
 
 .usage-img-1 {
-    background-image: url('assets/usage/oral-health.jpg');
+    background-image: url('store/src/assets/usage/oral-health.jpg');
 }
 
 .usage-img-2 {
-    background-image: url('assets/usage/brushing_teeth.jpg');
+    background-image: url('store/src/assets/usage/brushing_teeth.jpg');
 }
 
 .usage-img-3 {
-    background-image: url('assets/usage/brushing-teeth-0.jpg');
+    background-image: url('store/src/assets/usage/brushing-teeth-0.jpg');
 }
 
 .reviews {
@@ -127,7 +127,7 @@ header a {
 }
 
 .title-block {
-    background-image: url('teeth-4818711_1920.jpg');
+    background-image: url('store/src/assets/teeth-4818711_1920.jpg');
     background-size: 1920px;
     border-radius: 12px;
     background-position: center;
@@ -144,23 +144,23 @@ header a {
 }
 
 .review-img-1 {
-    background-image: url('assets/reviews/F_92098.jpg');
+    background-image: url('./store/src/assets/reviews/F_92098.jpg');
 }
 
 .review-img-2 {
-    background-image: url('assets/reviews/5e98afeed5873a7a914e0804.jpg');
+    background-image: url('./store/src/assets/reviews/5e98afeed5873a7a914e0804.jpg');
 }
 
 .review-img-3 {
-    background-image: url('assets/reviews/Carbon-Coco-Feature.jpg');
+    background-image: url('./store/src/assets/reviews/Carbon-Coco-Feature.jpg');
 }
 
 .review-img-4 {
-    background-image: url('assets/reviews/82433511_852470545213826_1092527907788158986_n.jpg');
+    background-image: url('./store/src/assets/reviews/82433511_852470545213826_1092527907788158986_n.jpg');
 }
 
 .review-img-5 {
-    background-image: url('assets/reviews/beauty-2019-03.jpg');
+    background-image: url('./store/src/assets/reviews/beauty-2019-03.jpg');
 }
 
 .reviews-inner {
@@ -189,7 +189,7 @@ header a {
 .review-wrapper .name span {
     display: block;
     font-size: 34px;
-    background-image: url(user.svg);
+    background-image: url(./store/src/assets/user.svg);
     background-size: 40px;
     height: 44px;
     width: 44px;
@@ -210,7 +210,7 @@ header a {
 }
 
 .buy {
-    background-image: url('assets/slide5-wide.jpg');
+    background-image: url('./store/src/assets/slide5-wide.jpg');
     background-size: 1920px;
     border-radius: 12px;
     background-position: center;
