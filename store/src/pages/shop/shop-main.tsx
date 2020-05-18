@@ -1,4 +1,5 @@
 import React from 'react';
+import Product from "./product";
 
 export function ShopMain() {
     return (
@@ -7,13 +8,7 @@ export function ShopMain() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-3">
-                        <figure className="card card-product-grid">
-                            <div className="img-wrap"><img src={require('../images/items/5.jpg')}/></div>
-                            <figcaption className="info-wrap border-top">
-                                <a href="#" className="title">Bell & Ross Nightlum</a>
-                                <div className="price mt-2">$299.00</div>
-                            </figcaption>
-                        </figure>
+                        <Product/>
                     </div>
 
                     <div className="col-md-3">
