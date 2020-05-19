@@ -1,8 +1,13 @@
 import React from 'react';
 import '../../style.css';
 import {Link} from "react-router-dom";
-function Navigation() {
-
+import {CartMini} from "../../components/cart-mini/CartMini";
+function Navigation(props) {
+    const loggedIn = props.loggedIn;
+    console.log(loggedIn)
+    const productsAmount = props.store.length;
+    const cabinetURL = '/cabinet';
+    const signInURL = '/signin';
     return (
         <header className="bg-white">
             <nav role="navigation" className="mobile-nav shadow-sm">
@@ -27,12 +32,18 @@ function Navigation() {
                         <a href="" target="_blank">
                             <li className="text-center">Contact us</li>
                         </a>
-                        <a href="" target="_blank">
-                            <li className="text-center"><Link to={`/signin`}>Sign in</Link></li>
-                        </a>
+                        {
+                            loggedIn?<a href="" target="_blank">
+                                <li className="text-center"><Link to={cabinetURL}>My profile</Link></li>
+                            </a>:<a href="" target="_blank">
+                                <li className="text-center"><Link to={signInURL}>Log In</Link></li>
+                            </a>
+                        }
+
                     </ul>
                 </div>
                 <h2 className="logo-1 text-danger p-3 w-25 logo-mobile">BRUSHER</h2>
+                <CartMini amount={productsAmount}/>
             </nav>
 
             <nav className="desktop-nav navbar-expand-lg d-md-flex d-sm-none d-none navbar-light p-0 text-center">
@@ -48,11 +59,16 @@ function Navigation() {
                 </nav>
                 <nav className="col-1 navbar navbar-expand-lg navbar-light">
                     <a className="navbar-brand" href="#">Contact us</a>
-                    <a className="navbar-brand btn text-danger">
-                        <Link to={`/signin`}>Sign in</Link>
-                    </a>
+                    {
+                        loggedIn?<a className="navbar-brand btn text-danger">
+                            <Link to={cabinetURL}>My profile</Link>
+                        </a>:<a className="navbar-brand btn text-danger">
+                            <Link to={signInURL}>Log In</Link>
+                        </a>
+                    }
                 </nav>
             </nav>
+            <CartMini amount={productsAmount}/>
         </header>
 
     );

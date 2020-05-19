@@ -1,10 +1,10 @@
 import React from 'react';
-import {addProduct, removeProduct} from "../../../actions/products";
+import {addProduct, removeProduct} from "../../../store/actions/products";
 import {connect} from "react-redux";
 import Button from "react-bootstrap/Button";
 
 export function Product(props){
-    console.log(props);
+
     function addProduct(name){
         console.log(props);
         props.addProduct('Test product');

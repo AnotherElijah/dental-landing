@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Navigation from "./pages/navigation";
 import 'bootstrap/dist/css/bootstrap.css';
 import Main from "./pages/main";
 import Footer from "./pages/main/Footer";
@@ -11,27 +10,32 @@ import {
 } from "react-router-dom";
 import {Page404} from "./pages/404/404";
 import {ShopMain} from "./pages/shop/shop-main";
-import Login from "./pages/login/Login";
 import './sass/bootstrap.scss';
 import './sass/responsive.scss';
 import './sass/ui.scss';
 import Registration from "./pages/registration/Login";
+import HeaderContainer from "./components/containers/headerContainer";
+import LoginContainer from "./components/containers/loginContainer";
+import CabinetContainer from "./components/containers/cabinetContainer";
 
 function App() {
 
     return (
         <>
             <Router>
-                <Navigation/>
+                <HeaderContainer/>
                 <Switch>
-                    <Route path="/shop">
-                        <ShopMain/>
-                    </Route>
                     <Route exact path="/">
                         <Main/>
                     </Route>
+                    <Route path="/shop">
+                        <ShopMain/>
+                    </Route>
+                    <Route path="/cabinet">
+                        <CabinetContainer/>
+                    </Route>
                     <Route path={`/signin`}>
-                        <Login/>
+                        <LoginContainer/>
                     </Route>
                     <Route path={`/registration`}>
                         <Registration/>

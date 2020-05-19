@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {Link} from "react-router-dom";
 
 
-export default function Login() {
+export default function Login(props:any) {
     return (
-        <section className="section-conten padding-y" style={{minHeight: "84vh"}}>
+
+        <section className="section-content padding-y" style={{minHeight: "84vh"}}>
             <div className="card mx-auto" style={{maxWidth: "380px", marginTop: "100px;"}}>
                 <div className="card-body">
                     <h4 className="card-title mb-4">Sign in/<Link to="/registration"><h4 className="card-title d-inline mb-4 text-primary">Sign up</h4></Link></h4>
@@ -30,7 +31,7 @@ export default function Login() {
                             </label>
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="btn btn-primary btn-block"> Login</button>
+                            <button type="submit" className="btn btn-primary btn-block" onClick={props.onClick}> Login</button>
                         </div>
                     </form>
                 </div>
