@@ -1,10 +1,7 @@
-
 import React from "react";
 import {Cabinet} from "../../pages/cabinet/cabinet";
 import Redirect from "react-router-dom/es/Redirect";
-import {userLogin, userLogout} from "../../store/actions/user";
 import {connect} from "react-redux";
-import {LoginContainer} from "./loginContainer";
 
 export class CabinetContainer extends React.Component {
 
@@ -17,7 +14,7 @@ export class CabinetContainer extends React.Component {
 }
 
 function mapStateToProps(state){
-    console.log('state', state)
+
     return {
         ...state.user
     }

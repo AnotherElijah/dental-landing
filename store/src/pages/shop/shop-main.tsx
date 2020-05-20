@@ -83,7 +83,8 @@ export function ShopMain() {
                                 <div className="mt-2">
                                     <var className="price">$84.00</var>
                                     <a href="#" className="btn btn-sm btn-outline-primary float-right">Add to
-                                        cart <i className="fa fa-shopping-cart"></i></a>
+                                        cart <i className="fa fa-shopping-cart"></i>
+                                    </a>
                                 </div>
                             </figcaption>
                         </figure>

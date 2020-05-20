@@ -1,6 +1,5 @@
 import * as ACTION_TYPES from '../constants/products'
-export const initialState = ['initial state']
-export const products = (state = initialState, action) => {
+export const products = (state = [], action) => {
     switch (action.type) {
         case ACTION_TYPES.ADD_PRODUCT:
             return [...state, action.payload];

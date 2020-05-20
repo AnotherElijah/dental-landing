@@ -108,8 +108,7 @@ header a {
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    background: transparent; /* make scrollbar transparent */
+
 }
 
 .reviews-inner {

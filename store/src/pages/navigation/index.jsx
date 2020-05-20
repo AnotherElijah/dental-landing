@@ -2,9 +2,9 @@ import React from 'react';
 import '../../style.css';
 import {Link} from "react-router-dom";
 import {CartMini} from "../../components/cart-mini/CartMini";
+
 function Navigation(props) {
     const loggedIn = props.loggedIn;
-    console.log(loggedIn)
     const productsAmount = props.store.length;
     const cabinetURL = '/cabinet';
     const signInURL = '/signin';
@@ -32,10 +32,20 @@ function Navigation(props) {
                         <a href="" target="_blank">
                             <li className="text-center">Contact us</li>
                         </a>
+
+
+                        <div className="text">
+                            <span className="text-muted">Welcome!</span>
+                            <div>
+                                <a className="mr-2" href="#">Sign in</a> |
+                                <a className="ml-2" href="#">Register</a>
+                            </div>
+                        </div>
+
                         {
-                            loggedIn?<a href="" target="_blank">
+                            loggedIn ? <a href="" target="_blank">
                                 <li className="text-center"><Link to={cabinetURL}>My profile</Link></li>
-                            </a>:<a href="" target="_blank">
+                            </a> : <a href="" target="_blank">
                                 <li className="text-center"><Link to={signInURL}>Log In</Link></li>
                             </a>
                         }
@@ -47,28 +57,35 @@ function Navigation(props) {
             </nav>
 
             <nav className="desktop-nav navbar-expand-lg d-md-flex d-sm-none d-none navbar-light p-0 text-center">
-                <nav className="col-1 navbar navbar-expand-lg navbar-light ml-3">
-                    <a className="navbar-brand" href="#"><Link to='shop'>Store</Link></a>
-
+                <nav className="col-4 navbar navbar-expand-lg navbar-light">
+                    <a className="navbar-brand" href="#">
+                        <Link to='shop'>Store</Link>
+                    </a>
                     <a className="navbar-brand" href="#">Contact</a>
-                </nav>
-                <h2 className="logo-2 col-2 offset-4 text-danger p-3 mb-0">BRUSHER</h2>
-                <nav className="col-1 offset-2 navbar navbar-expand-lg navbar-light">
                     <a className="navbar-brand" href="#">Help</a>
                     <a className="navbar-brand" href="#">Review</a>
-                </nav>
-                <nav className="col-1 navbar navbar-expand-lg navbar-light">
                     <a className="navbar-brand" href="#">Contact us</a>
-                    {
-                        loggedIn?<a className="navbar-brand btn text-danger">
-                            <Link to={cabinetURL}>My profile</Link>
-                        </a>:<a className="navbar-brand btn text-danger">
-                            <Link to={signInURL}>Log In</Link>
-                        </a>
-                    }
+                </nav>
+                <h2 className="logo-2 col-2 offset-1 text-danger p-3 mb-0">BRUSHER</h2>
+                <nav className="offset-1 col-4 navbar navbar-expand-lg navbar-light justify-content-end">
+                    <div className="nav-right-wrapper d-flex flex-row align-items-center justify-content-end">
+                        <CartMini className="" amount={productsAmount}/>
+                        {
+                            loggedIn ? <a href="" target="_blank">
+                                    <Link to={cabinetURL}>
+                                        <a href="#" className="icon icon-sm rounded-circle border">
+                                            <i className="fa fa-user"></i></a></Link>
+                                </a> :
+                                <div className="text mr-3">
+                                    <a href="#" className="d-inline mr-1"><Link to={signInURL}>Sign in</Link></a>
+                                    |
+                                    <a href="#" className="d-inline ml-1"><Link to='/registration'>Register</Link></a>
+                                </div>
+
+                        }
+                    </div>
                 </nav>
             </nav>
-            <CartMini amount={productsAmount}/>
         </header>
 
     );

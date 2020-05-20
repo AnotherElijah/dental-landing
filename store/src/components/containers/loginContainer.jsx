@@ -23,7 +23,7 @@ export class LoginContainer extends React.Component {
 }
 
 function mapStateToProps(state){
-    console.log('state', state)
+
     return {
         ...state.user
     }

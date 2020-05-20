@@ -27,7 +27,7 @@ export default function Login(props:any) {
                             <label className="float-left custom-control custom-checkbox"> <input type="checkbox"
                                                                                                  className="custom-control-input"
                                                                                                  checked/>
-                                <div className="custom-control-label"> Remember</div>
+                                <div className="custom-control-label">Remember</div>
                             </label>
                         </div>
                         <div className="form-group">

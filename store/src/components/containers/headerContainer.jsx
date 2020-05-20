@@ -17,7 +17,6 @@ export class HeaderContainer extends React.Component {
 }
 
 function mapStateToProps(state){
-    console.log('state', state)
     return {
         products: state.products,
         user: state.user
