@@ -19,7 +19,35 @@ export function CartList(props) {
                     <tr>
                         <td>
                             <figure className="itemside align-items-center">
-                                <div className="aside"><img src={require("../../pages/images/items/11.jpg")}
+                                <div className="aside">
+                                    <img src={require("../../mock-data/images/11.jpg")} className="img-sm"/></div>
+                                <figcaption className="info">
+                                    <a href="#" className="title text-dark">Camera Canon EOS M50 Kit</a>
+                                    <p className="text-muted small">Matrix: 25 Mpx <br/> Brand: Canon</p>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <select className="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div className="price-wrap">
+                                <var className="price">$1156.00</var>
+                                <small className="text-muted"> $315.20 each </small>
+                            </div>
+                        </td>
+                        <td className="text-right">
+                            <a href="" className="btn btn-light"> Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure className="itemside align-items-center">
+                                <div className="aside"><img src={require("../../mock-data/images/11.jpg")}
                                                             className="img-sm"/></div>
                                 <figcaption className="info">
                                     <a href="#" className="title text-dark">Camera Canon EOS M50 Kit</a>
@@ -47,7 +75,7 @@ export function CartList(props) {
                     <tr>
                         <td>
                             <figure className="itemside align-items-center">
-                                <div className="aside"><img src={require("../../pages/images/items/11.jpg")}
+                                <div className="aside"><img src={require("../../mock-data/images/11.jpg")}
                                                             className="img-sm"/></div>
                                 <figcaption className="info">
                                     <a href="#" className="title text-dark">Camera Canon EOS M50 Kit</a>
@@ -75,35 +103,7 @@ export function CartList(props) {
                     <tr>
                         <td>
                             <figure className="itemside align-items-center">
-                                <div className="aside"><img src={require("../../pages/images/items/11.jpg")}
-                                                            className="img-sm"/></div>
-                                <figcaption className="info">
-                                    <a href="#" className="title text-dark">Camera Canon EOS M50 Kit</a>
-                                    <p className="text-muted small">Matrix: 25 Mpx <br/> Brand: Canon</p>
-                                </figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            <select className="form-control">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </td>
-                        <td>
-                            <div className="price-wrap">
-                                <var className="price">$1156.00</var>
-                                <small className="text-muted"> $315.20 each </small>
-                            </div>
-                        </td>
-                        <td className="text-right">
-                            <a href="" className="btn btn-light"> Remove</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <figure className="itemside align-items-center">
-                                <div className="aside"><img src={require("../../pages/images/items/10.jpg")}
+                                <div className="aside"><img src={require("../../mock-data/images/10.jpg")}
                                                             className="img-sm"/></div>
                                 <figcaption className="info">
                                     <a href="#" className="title text-dark">ADATA Premier ONE microSDXC</a>
@@ -131,7 +131,7 @@ export function CartList(props) {
                     <tr>
                         <td>
                             <figure className="itemside align-items-center">
-                                <div className="aside"><img src={require("../../pages/images/items/9.jpg")}
+                                <div className="aside"><img src={require("../../mock-data/images/9.jpg")}
                                                             className="img-sm"/></div>
                                 <figcaption className="info">
                                     <a href="#" className="title text-dark">Logitec headset for gaming</a>
