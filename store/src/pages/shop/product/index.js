@@ -1,29 +1,29 @@
 import React from 'react';
 import {addProduct, removeProduct} from "../../../store/actions/products";
 import {connect} from "react-redux";
+import {useRouteMatch} from "react-router";
+import Link from "react-router-dom/es/Link";
 
 export function Product(props) {
-
-    const data = {
-        id: "1",
-        name: "Bell & Ross Nightlum",
-        price: "$299.00",
-        picture: require("../../../"+"mock-data/images/1.jpg")
-    };
 
     function addProduct(name) {
         props.addProduct('Test product');
     }
 
     //exctract data from ref
+    let {url} = useRouteMatch();
 
     return (
         <figure className="card card-product-grid">
-            <div className="img-wrap">
-                <img src={props.picture}/>
+            <div className="img-wrap" >
+                <Link to={`${url}/product/${props.data.id}`}>
+                    <img src={props.picture}/>
+                </Link>
             </div>
             <figcaption className="info-wrap border-top">
-                <a href="#" className="title">{props.data.name}</a>
+                <Link to={`${url}product/${props.data.id}`}>
+                    <p className="title">{props.data.name}</p>
+                </Link>
                 <div className="price mt-2">
                     {props.data.price}
                     <a onClick={addProduct} className="btn btn-sm btn-outline-primary float-right">

@@ -17,8 +17,8 @@ import Registration from "./pages/registration/Login";
 import HeaderContainer from "./components/containers/headerContainer";
 import LoginContainer from "./components/containers/loginContainer";
 import CabinetContainer from "./components/containers/cabinetContainer";
-import {ProductDetails} from "./components/product-details/ProductDetails";
-import {TestRoute} from "./testRoute";
+import {ProductDetailsContainer} from "./components/product-details/ProductDetailsContainer";
+import {ProductsRoute} from "./routes/ProductsRoute";
 
 function App() {
 
@@ -31,10 +31,7 @@ function App() {
                         <Main/>
                     </Route>
                     <Route path="/shop">
-                        <ShopMain/>
-                    </Route>
-                    <Route path="/testroute">
-                        <TestRoute/>
+                        <ProductsRoute/>
                     </Route>
                     <Route path="/cabinet">
                         <CabinetContainer/>
