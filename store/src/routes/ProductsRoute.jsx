@@ -13,9 +13,10 @@ export function ProductsRoute() {
                 <Route exact path={`${path}`}>
                     <ShopMain/>
                 </Route>
-                <Route path={`${path}/product/:productId`}>
+                <Route path={`${path}/product/:productId`} render={(props) => <ProductDetailsContainer {...props} />}></Route>
+                {/*<Route path={`${path}/product/:productId`}>
                     <ProductDetailsContainer/>
-                </Route>
+                </Route>*/}
             </Switch>
         </>)
 }
