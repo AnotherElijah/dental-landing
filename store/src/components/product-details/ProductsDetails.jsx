@@ -1,9 +1,6 @@
 import React from 'react';
 
 export function ProductDetails(props){
-
-
-
     return <div className="card">
         <div className="row no-gutters">
             <aside className="col-md-6">
@@ -20,14 +17,11 @@ export function ProductDetails(props){
 
                     <div className="rating-wrap my-3">
                         <ul className="rating-stars">
-                            <li style={{width: "80%"}} className="stars-active">
-                                <i className="fa fa-star"></i> <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i> <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                            </li>
                             <li>
-                                <i className="fa fa-star"></i> <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i> <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
                             </li>
                         </ul>
@@ -41,9 +35,7 @@ export function ProductDetails(props){
                         <span className="text-muted">/per kg</span>
                     </div>
 
-                    <p>Virgil Abloh’s Off-White is a streetwear-inspired collection that continues to break away
-                        from the conventions of mainstream fashion. Made in Italy, these black and brown
-                        Odsy-1000 low-top sneakers.</p>
+                    <p>{props.data.description}</p>
 
                     <dl className="row">
                         <dt className="col-sm-3">Model#</dt>
