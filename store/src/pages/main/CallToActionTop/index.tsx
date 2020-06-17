@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function CallToActionTop() {
     return (
@@ -7,9 +8,11 @@ function CallToActionTop() {
                 <div className="pl-5 ml-5 title-block-txt-wrapper">
                     <h1 className="text-white">Simple. Accessible. <br/> Enjoyable.</h1>
                     <p className="text-white">Everything you need to support healthy oral care habits for life.</p>
+                    <Link to="/shop">
                     <button
                         className="btn rounded-pill btn-outline-primary text-white bg-primary pt-3 pb-3 pl-5 pr-5">Store
                     </button>
+                    </Link>
                 </div>
             </div>
         </section>

@@ -1,6 +1,8 @@
 import React from 'react';
+import {RateStars} from "../rate-stars/RateStars";
 
 export function ProductDetails(props){
+
     return <div className="card">
         <div className="row no-gutters">
             <aside className="col-md-6">
@@ -18,11 +20,7 @@ export function ProductDetails(props){
                     <div className="rating-wrap my-3">
                         <ul className="rating-stars">
                             <li>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
+                                <RateStars rate={props.data.rate}/>
                             </li>
                         </ul>
                         <small className="label-rating text-muted">132 reviews</small>
@@ -32,7 +30,6 @@ export function ProductDetails(props){
 
                     <div className="mb-3">
                         <var className="price h4">{props.data.price}</var>
-                        <span className="text-muted">/per kg</span>
                     </div>
 
                     <p>{props.data.description}</p>
@@ -87,9 +84,9 @@ export function ProductDetails(props){
                             </div>
                         </div>*/}
                     </div>
-                    <a href="#" className="btn  btn-primary"> Buy now </a>
                     <a href="#" className="btn  btn-outline-primary">
-                        <span className="text">Add to cart</span><i className="fas fa-shopping-cart"></i></a>
+                        <span className="text">Add to cart</span>
+                        <i className="fas fa-shopping-cart"></i></a>
                 </article>
             </main>
         </div>

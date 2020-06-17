@@ -10,10 +10,6 @@ export class ShopMain extends React.Component {
         };
     }
 
-    componentWillMount() {
-        console.log(this.state)
-    }
-
     render() {
         return (
             <>

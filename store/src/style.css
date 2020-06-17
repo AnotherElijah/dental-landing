@@ -301,3 +301,9 @@ footer a {
         width: 100%!important;
     }
 }
+.btn-outline-primary:hover{
+    color: white!important;
+}
+.btn-primary:hover{
+    color: white!important;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../style.css';
 import {Link} from "react-router-dom";
-import {CartMini} from "../../components/cart-mini/CartMini";
+import {CartMini} from "../../components/cart/cart-mini/CartMini";
 
 function Navigation(props) {
     const loggedIn = props.loggedIn;
@@ -18,8 +18,11 @@ function Navigation(props) {
                     <span></span>
                     <ul id="menu" className="bg-white shadow-sm">
                         <a href="#">
-                            <li className="text-center"><Link to='shop'>Store</Link></li>
+                            <li className="text-center">
+                                <Link to='/shop'>Store</Link>
+                            </li>
                         </a>
+
                         <a href="#">
                             <li className="text-center">Contact</li>
                         </a>
@@ -56,17 +59,19 @@ function Navigation(props) {
                 <CartMini amount={productsAmount}/>
             </nav>
 
-            <nav className="desktop-nav navbar-expand-lg d-md-flex d-sm-none d-none navbar-light p-0 text-center">
+            <nav className="desktop-nav navbar-expand-lg d-md-flex d-sm-none d-none navbar-light p-0 text-center justify-content-around">
                 <nav className="col-4 navbar navbar-expand-lg navbar-light">
                     <a className="navbar-brand" href="#">
-                        <Link to='shop'>Store</Link>
+                        <Link to='/shop'>Store</Link>
                     </a>
                     <a className="navbar-brand" href="#">Contact</a>
                     <a className="navbar-brand" href="#">Help</a>
                     <a className="navbar-brand" href="#">Review</a>
                     <a className="navbar-brand" href="#">Contact us</a>
                 </nav>
+                <Link to={'/'}>
                 <h2 className="logo-2 col-2 offset-1 text-danger p-3 mb-0">BRUSHER</h2>
+                </Link>
                 <nav className="offset-1 col-4 navbar navbar-expand-lg navbar-light justify-content-end">
                     <div className="nav-right-wrapper d-flex flex-row align-items-center justify-content-end">
                         <CartMini className="" amount={productsAmount}/>

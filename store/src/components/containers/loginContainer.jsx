@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from '../../pages/navigation';
 import {connect} from "react-redux";
 import {userLogin, userLogout} from "../../store/actions/user";
 import Login from "../../pages/login/Login";
@@ -8,9 +7,6 @@ import Redirect from "react-router-dom/es/Redirect";
 export class LoginContainer extends React.Component {
     constructor() {
         super();
-    }
-    componentDidMount() {
-        console.log(this.props)
     }
 
     render(){

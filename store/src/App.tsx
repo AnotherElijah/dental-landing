@@ -17,7 +17,6 @@ import Registration from "./pages/registration/Login";
 import HeaderContainer from "./components/containers/headerContainer";
 import LoginContainer from "./components/containers/loginContainer";
 import CabinetContainer from "./components/containers/cabinetContainer";
-import {ProductDetailsContainer} from "./components/product-details/ProductDetailsContainer";
 import {ProductsRoute} from "./routes/ProductsRoute";
 
 function App() {
