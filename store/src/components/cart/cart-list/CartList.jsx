@@ -3,6 +3,8 @@ import './slide.scss';
 import {connect} from "react-redux";
 import {userLogin, userLogout} from "../../../store/actions/user";
 import {products} from "../../../store/reducers/products";
+import * as ACTION_TYPES from "../../../store/constants/products";
+import {removeProduct} from "../../../store/actions/products";
 
 export class CartList extends React.Component {
     constructor(props) {
@@ -13,8 +15,9 @@ export class CartList extends React.Component {
         console.log(this.props.products)
     }
 
-    removeProduct(){
-        this.props.product()
+    removeProduct(product){
+        console.log(product);
+        this.props.removeProduct(product.name);
     }
 
     render() {
@@ -61,7 +64,7 @@ export class CartList extends React.Component {
                                             </div>
                                         </td>
                                         <td className="text-right">
-                                            <a href="" className="btn btn-light" onClick={this.removeProduct}>Remove</a>
+                                            <a className="btn btn-light" onClick={(e)=>{this.removeProduct(product); e.preventDefault()}}>Remove</a>
                                         </td>
                                     </tr>
                                 }
@@ -102,7 +105,7 @@ function mapStateToProps(state) {
 }
 function mapDispatchToProps(dispatch){
     return {
-        remove: (name) => dispatch(products(name)),
+        removeProduct: (name) => dispatch(removeProduct(name)),
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(CartList);
